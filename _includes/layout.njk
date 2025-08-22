@@ -1,0 +1,36 @@
+---
+title: Schermgruis
+---
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            {% if title %}
+                {{ title }}{% else %}Schermgruis{% endif %}
+        </title>
+        {# Primary Meta Tags #}
+        <meta name="description" content="{% if description %}{{ description }}{% else %}{% endif %}">
+        <meta name="author" content="Tjerk Jippe Dijkstra">
+        <meta
+        name="keywords" content="{% if keywords %}{{ keywords }}{% else %}{% endif %}"> {# Open Graph #}
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://schermgruis.nl{{ page.url }}">
+        <meta property="og:title" content="{% if title %}{{ title }}{% else %}Schermgruis{% endif %}">
+        <meta property="og:description" content="{% if description %}{{ description }}{% else %}{% endif %}">
+        <meta property="og:image" content="/images/og.png">
+        <link rel="stylesheet" href="/bundle.css">
+        <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+        <link rel="canonical" href="https://schermgruis.nl{{ page.url }}">
+        <meta
+        name="theme-color" content="#F4CDCD"> <!-- Twitter Card Tags -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="{% if title %}{{ title }}{% else %}Schermgruis{% endif %}">
+        <meta name="twitter:description" content="{% if description %}{{ description }}{% else %}{% endif %}">
+    </head>
+    <body>
+        {{ content | safe }}
+    </body>
+</html>
