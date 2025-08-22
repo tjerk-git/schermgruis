@@ -28,6 +28,7 @@ footer {
 
 body{
     font-family: "Darker Grotesque Variable", sans-serif;
+    background-color: #ffc767;
 }
 
 .container{
@@ -40,3 +41,4 @@ body{
     font-weight: 600;
     text-transform: uppercase;
 }
+
